@@ -1,0 +1,29 @@
+<resources>
+    //Nom de l'application
+    <string name="app_name">Sales of second-hand articles</string>
+
+    //Page Acceuil
+    <string name="ajoutArticle">Add a new article</string>
+    <string name="recherchePrix">Search an article by price</string>
+    <string name="rechercheVille">Search an article by city</string>
+
+    //Page ajout
+    <string name="nomArticle">Name :</string>
+    <string name="descriptif">Description : </string>
+    <string name="prix">Price : </string>
+    <string name="etat">Condition : </string>
+    <string name="ville">City : </string>
+    <string name="information">Information :</string>
+    <string name="radioEnvoyer">Can be sent</string>
+    <string name="radioMain">Picked up by hands</string>
+    <string name="btnAjout">Add</string>
+
+    //Page recherche prix
+
+
+    //Page recherche ville
+
+
+    //Commun
+    <string name="btnRetour">Back</string>
+</resources>

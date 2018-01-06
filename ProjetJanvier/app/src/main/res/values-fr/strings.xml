@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Nom de l'application
+    <string name="app_name">Ventes d\'articles d\'occasion</string>
+
+    //Page Acceuil
+    <string name="ajoutArticle">Poster un nouvel article</string>
+    <string name="recherchePrix">Rechercher un article par prix</string>
+    <string name="rechercheVille">Rechercher un article par ville</string>
+
+    //Page ajout
+    <string name="nomArticle">Nom :</string>
+    <string name="descriptif">Descriptif : </string>
+    <string name="prix">Prix : </string>
+    <string name="etat">Etat : </string>
+    <string name="ville">Ville : </string>
+    <string name="information">Information :</string>
+    <string name="radioEnvoyer">Peut être envoyer</string>
+    <string name="radioMain">Retiré en mains propres</string>
+    <string name="btnAjout">Ajouter</string>
+
+    //Page recherche prix
+
+
+    //Page recherche ville
+
+
+    //Commun
+    <string name="btnRetour">Retour</string>
+</resources>

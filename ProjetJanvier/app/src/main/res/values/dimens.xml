@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Dimensions normales-->
+    <dimen name="titrewidth">270dp</dimen>
+    <dimen name="tv">80dp</dimen>
+    <dimen name="et">200dp</dimen>
+    <dimen name="btn">120dp</dimen>
+    <dimen name="titrefont">20sp</dimen>
+    <dimen name="btnfont">20sp</dimen>
+
+    <!--Dimensions XL-->
+    <dimen name="titrewidthxl">470dp</dimen>
+    <dimen name="tvxl">150dp</dimen>
+    <dimen name="etxl">300dp</dimen>
+    <dimen name="btnxl">150dp</dimen>
+    <dimen name="titrefontxl">50sp</dimen>
+    <dimen name="btnfontxl">30sp</dimen>
+</resources>

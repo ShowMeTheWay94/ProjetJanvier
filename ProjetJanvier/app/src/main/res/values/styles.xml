@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Style normal-->
+    <style name="titre">
+        <item name="android:width">@dimen/titrewidth</item>
+        <item name="android:textSize">@dimen/titrefont</item>
+    </style>
+
+    <style name="tv">
+        <item name="android:width">@dimen/tv</item>
+    </style>
+
+    <style name="et">
+        <item name="android:width">@dimen/et</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:width">@dimen/btn</item>
+        <item name="android:textSize">@dimen/btnfont</item>
+    </style>
+
+    <!--Style XL-->
+    <style name="titrexl">
+        <item name="android:width">@dimen/titrewidthxl</item>
+        <item name="android:textSize">@dimen/titrefontxl</item>
+    </style>
+
+    <style name="tvxl">
+        <item name="android:width">@dimen/tvxl</item>
+    </style>
+
+    <style name="etxl">
+        <item name="android:width">@dimen/etxl</item>
+    </style>
+
+    <style name="btnxl">
+        <item name="android:width">@dimen/btn</item>
+        <item name="android:textSize">@dimen/btnfont</item>
+    </style>
+</resources>
