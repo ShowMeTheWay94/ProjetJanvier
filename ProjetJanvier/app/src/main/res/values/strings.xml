@@ -17,13 +17,20 @@
     <string name="radioEnvoyer">Can be sent</string>
     <string name="radioMain">Picked up by hands</string>
     <string name="btnAjout">Add</string>
+    <string name="radioNeuf">New</string>
+    <string name="radioUse">Used</string>
 
     //Page recherche prix
-
+    <string name="prixMin">Minimum price : </string>
+    <string name="prixMax">Maximum price : </string>
 
     //Page recherche ville
-
+    <string name="villeRecherche">Ville recherchée : </string>
 
     //Commun
+    <string name="btnCherche">Search</string>
     <string name="btnRetour">Back</string>
+
+    //Erreurs
+    <string name="erreurChampManquant">All fields must be filled</string>
 </resources>

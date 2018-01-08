@@ -33,7 +33,7 @@ public class AcceuilActivity extends AppCompatActivity {
     private View.OnClickListener prix = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(AcceuilActivity.this, AjoutArticle.class);
+            Intent intent = new Intent(AcceuilActivity.this, RecherchePrix.class);
             startActivity(intent);
         }
     };

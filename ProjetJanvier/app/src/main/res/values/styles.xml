@@ -35,14 +35,16 @@
 
     <style name="tvxl">
         <item name="android:width">@dimen/tvxl</item>
+        <item name="android:textSize">@dimen/textfontxl</item>
     </style>
 
     <style name="etxl">
         <item name="android:width">@dimen/etxl</item>
+        <item name="android:textSize">@dimen/textfontxl</item>
     </style>
 
     <style name="btnxl">
-        <item name="android:width">@dimen/btn</item>
-        <item name="android:textSize">@dimen/btnfont</item>
+        <item name="android:width">@dimen/btnxl</item>
+        <item name="android:textSize">@dimen/btnfontxl</item>
     </style>
 </resources>

@@ -10,9 +10,10 @@
 
     <!--Dimensions XL-->
     <dimen name="titrewidthxl">470dp</dimen>
-    <dimen name="tvxl">150dp</dimen>
+    <dimen name="tvxl">180dp</dimen>
     <dimen name="etxl">300dp</dimen>
-    <dimen name="btnxl">150dp</dimen>
+    <dimen name="btnxl">300dp</dimen>
+    <dimen name="textfontxl">30sp</dimen>
     <dimen name="titrefontxl">50sp</dimen>
-    <dimen name="btnfontxl">30sp</dimen>
+    <dimen name="btnfontxl">50sp</dimen>
 </resources>

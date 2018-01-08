@@ -18,13 +18,20 @@
     <string name="radioEnvoyer">Peut être envoyer</string>
     <string name="radioMain">Retiré en mains propres</string>
     <string name="btnAjout">Ajouter</string>
+    <string name="radioNeuf">Neuf</string>
+    <string name="radioUse">Usé</string>
 
     //Page recherche prix
-
+    <string name="prixMin">Prix minimum : </string>
+    <string name="prixMax">Prix maximum : </string>
 
     //Page recherche ville
-
+    <string name="villeRecherche">Ville recherchée : </string>
 
     //Commun
     <string name="btnRetour">Retour</string>
+    <string name="btnCherche">Chercher</string>
+
+    //Erreurs
+    <string name="erreurChampManquant">Tous les champs doivent être remplis</string>
 </resources>
