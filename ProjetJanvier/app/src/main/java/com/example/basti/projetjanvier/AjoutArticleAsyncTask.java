@@ -3,7 +3,10 @@ package com.example.basti.projetjanvier;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
@@ -26,10 +29,21 @@ public class AjoutArticleAsyncTask extends AsyncTask<String, String, String> {
             writer.flush();
             writer.close();
             out.close();
+            InputStream is = urlConnection.getInputStream();
+            BufferedReader br = new BufferedReader(new InputStreamReader(is, "iso-8859-1"));
+            String result = "";
+            String line = "";
+            while((line = br.readLine()) != null){
+                result += line + "\n";
+            }
+            br.close();
+            is.close();
             urlConnection.disconnect();
+            Log.e("PHP RESULT", result);
+
         } catch (Exception e) {
-            Log.e("Exception asynchrone", e.getMessage());
             e.printStackTrace();
+            Log.e("Exception asynchrone", e.getMessage());
         }
         return null;
     }

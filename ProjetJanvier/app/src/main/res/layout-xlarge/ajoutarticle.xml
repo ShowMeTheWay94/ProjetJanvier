@@ -174,7 +174,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btnRetour"
         android:layout_marginTop="160dp"
-        android:layout_marginLeft="170dp"
+        android:layout_marginLeft="150dp"
         app:layout_constraintTop_toBottomOf="@+id/txtInformation"
         app:layout_constraintLeft_toRightOf="@+id/btnAjout"
         style="@style/btnxl"/>

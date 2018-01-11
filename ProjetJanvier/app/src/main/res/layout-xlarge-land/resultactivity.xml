@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TableLayout android:id="@+id/listeArticle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+        </TableLayout>
+
+        <Button android:id="@+id/precedent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/precedent"
+            android:layout_marginLeft="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listeArticle"
+            android:enabled="false"
+            style="@style/btnxl" />
+
+        <Button android:id="@+id/suivant"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/suivant"
+            android:layout_marginRight="150dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listeArticle"
+            android:enabled="false"
+            style="@style/btnxl"/>
+
+        <Button android:id="@+id/tri"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/triAscendant"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/suivant"
+            style="@style/btnxl"/>
+
+        <Button android:id="@+id/btnRetour"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btnRetour"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tri"
+            style="@style/btnxl"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

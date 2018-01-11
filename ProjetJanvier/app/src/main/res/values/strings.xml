@@ -27,10 +27,17 @@
     //Page recherche ville
     <string name="villeRecherche">Ville recherchée : </string>
 
+    //Page result
+    <string name="precedent">Previous</string>
+    <string name="suivant">Next</string>
+    <string name="triAscendant">Upward</string>
+    <string name="triDescendant">Downward</string>
+
     //Commun
     <string name="btnCherche">Search</string>
     <string name="btnRetour">Back</string>
 
     //Erreurs
     <string name="erreurChampManquant">All fields must be filled</string>
+    <string name="listeVide">List is empty</string>
 </resources>

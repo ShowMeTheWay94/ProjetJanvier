@@ -13,6 +13,7 @@ public class AcceuilActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acceuil);
 
+        //Récupération des boutons
         Button ajoutArticle = (Button)findViewById(R.id.ajoutArticle);
         Button recherchePrix = (Button)findViewById(R.id.recherchePrix);
         Button rechercheVille = (Button)findViewById(R.id.rechercheVille);
@@ -22,6 +23,7 @@ public class AcceuilActivity extends AppCompatActivity {
         rechercheVille.setOnClickListener(ville);
     }
 
+    //Fonction quand on clique sur le bouton ajout
     private View.OnClickListener ajout = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -30,6 +32,7 @@ public class AcceuilActivity extends AppCompatActivity {
         }
     };
 
+    //Fonction quand on clique sur le bouton recherchePrix
     private View.OnClickListener prix = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -38,10 +41,11 @@ public class AcceuilActivity extends AppCompatActivity {
         }
     };
 
+    //Fonction quand on clique sur le bouton rechercheVille
     private View.OnClickListener ville = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(AcceuilActivity.this, AjoutArticle.class);
+            Intent intent = new Intent(AcceuilActivity.this, RechercheVille.class);
             startActivity(intent);
         }
     };

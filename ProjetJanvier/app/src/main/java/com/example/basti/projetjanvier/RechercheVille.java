@@ -1,5 +1,6 @@
 package com.example.basti.projetjanvier;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,26 +12,24 @@ import android.widget.Toast;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-public class RecherchePrix extends AppCompatActivity {
-    private EditText min,max;
+public class RechercheVille extends AppCompatActivity {
+    private EditText ville;
     private StringBuilder res;
-    private RecherchePrix search;
+    private RechercheVille search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.rechercheprix);
+        setContentView(R.layout.rechercheville);
 
         //Initialise l'activité et récupère les boutons
         search = this;
-        min = (EditText)findViewById(R.id.prixMin);
-        max = (EditText)findViewById(R.id.prixMax);
+        ville = (EditText)findViewById(R.id.villeRecherche);
         Button cherche = (Button)findViewById(R.id.btnCherche);
         Button retour = (Button)findViewById(R.id.btnRetour);
 
         if(savedInstanceState != null){
-            min.setText(savedInstanceState.getString("min"));
-            max.setText(savedInstanceState.getString("max"));
+            ville.setText(savedInstanceState.getString("ville"));
         }
 
         cherche.setOnClickListener(chercher);
@@ -41,25 +40,21 @@ public class RecherchePrix extends AppCompatActivity {
     private View.OnClickListener chercher = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(min != null || max != null){
+            if(ville != null) {
                 res = new StringBuilder();
 
                 try {
-                    res.append(URLEncoder.encode("prixMin", "UTF-8"));
+                    res.append(URLEncoder.encode("ville", "UTF-8"));
                     res.append("=");
-                    res.append(URLEncoder.encode(min.getText().toString(), "UTF-8"));
-                    res.append("&");
-                    res.append(URLEncoder.encode("prixMax", "UTF-8"));
-                    res.append("=");
-                    res.append(URLEncoder.encode(max.getText().toString(), "UTF-8"));
+                    res.append(URLEncoder.encode(ville.getText().toString(), "UTF-8"));
                 } catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
                 }
 
-                new RecherchePrixAsyncTask(search).execute(res.toString());
+                new RechercheVilleAsyncTask(search).execute(res.toString());
             }
             else{
-                Toast.makeText(v.getContext(),"Veuillez remplir les deux champs", Toast.LENGTH_LONG).show();
+                Toast.makeText(v.getContext(),"Veuillez rentrer une ville",Toast.LENGTH_LONG).show();
             }
         }
     };
@@ -68,7 +63,7 @@ public class RecherchePrix extends AppCompatActivity {
     private View.OnClickListener back = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(RecherchePrix.this, AcceuilActivity.class);
+            Intent intent = new Intent(RechercheVille.this, AcceuilActivity.class);
             startActivity(intent);
         }
     };
@@ -77,7 +72,6 @@ public class RecherchePrix extends AppCompatActivity {
     public void onSaveInstanceState(Bundle saveInstanceState) {
         super.onSaveInstanceState(saveInstanceState);
 
-        saveInstanceState.putString("min", min.getText().toString());
-        saveInstanceState.putString("max", max.getText().toString());
+        saveInstanceState.putString("ville", ville.getText().toString());
     }
 }
